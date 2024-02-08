@@ -4,6 +4,36 @@
  * Copyright 2011-2019 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
+ .achievement .intext {
+  display: none
+ }
+
+.achievement {
+  cursor: pointer;
+  margin-bottom: 20px;
+  transition: all 0.3s ease-in-out;
+  padding: 10px;
+  border-radius: 5px;
+}
+ 
+.achievement:hover {
+  transform: scale(1.05);
+}
+ 
+/* .achievement .text {
+   display: none; 
+} */
+ 
+.achievement:hover .intext {
+  display: block;
+}
+
+.achievement:hover .text span{
+  content: "";
+  display: none;
+}
+
+
 :root {
   --blue: #007bff;
   --indigo: #6610f2;
@@ -9008,6 +9038,8 @@ h1, h2, h3, h4, h5,
     opacity: .9; }
   .project:hover .text, .project:focus .text {
     opacity: 1; }
+    /* .project:hover .text, .project:focus .text:hover {
+      display: none; } */
 
 .aside-stretch {
   background: #ffce6c; }
