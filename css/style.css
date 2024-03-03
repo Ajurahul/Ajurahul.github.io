@@ -45,6 +45,58 @@
   transform: scale(1.05);
 }
 
+/* Styles for the carousel */
+.carousel {
+  width: 100%; /* Ensure the carousel fills the entire width of its container */
+  margin-bottom: 20px; /* Add some space below the carousel */
+}
+
+/* Style for the carousel indicators */
+.carousel-indicators li {
+  background-color: #aca9a930; /* Change the background color of the indicators */
+}
+
+/* Style for the active carousel indicator */
+.carousel-indicators .active {
+  background-color: #333; /* Change the background color of the active indicator */
+}
+
+/* Show the controls on hover */
+.carousel:hover .carousel-control-prev,
+.carousel:hover .carousel-control-next {
+  opacity: 1;
+  background-color: rgba(0, 0, 0, 0.100);
+}
+
+/* Style for the carousel controls */
+.carousel-control-prev,
+.carousel-control-next {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  width: auto; /* Ensure the controls adjust their width based on content */
+  color: #fff; /* Change the color of the controls */
+  background-color: rgba(0, 0, 0, 0); /* Add a semi-transparent background to the controls */
+  border-radius: 25px; /* Add some border radius to make the controls look rounded */
+  padding: 10px; /* Add padding to the controls */
+}
+
+/* Style for the carousel control icons */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: #004085; /* Ensure the icon background is transparent */
+  
+}
+/* Style for the certificate image */
+.carousel-item img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Style for the hover effect */
+.carousel-item img:hover {
+  opacity: 0.8; /* Reduce opacity on hover to give a semi-transparent effect */
+}
+
 
 :root {
   --blue: #007bff;
