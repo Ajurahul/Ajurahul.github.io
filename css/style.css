@@ -4,6 +4,60 @@
  * Copyright 2011-2019 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
+
+
+ .stargaze {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1; /* Ensure it's behind other content */
+}
+
+ .stargaze-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1; /* Ensure stars are behind other content */
+  background-color: #0D1B2A; /* Dark blue background */
+}
+
+@keyframes twinkle {
+  0% { opacity: 0; }
+  50% { opacity: 1; }
+  100% { opacity: 0; }
+}
+
+.star {
+  animation: twinkle infinite; /* Apply the twinkle animation */
+}
+
+.star {
+  position: absolute;
+  width: 1px; /* Adjust size of stars */
+  height: 1px;
+  background-color: #fff; /* White stars */
+  border-radius: 50%; /* Shape stars as circles */
+}
+
+@mixin border-radius($radius) {
+-webkit-border-radius: $radius;
+   -moz-border-radius: $radius;
+    -ms-border-radius: $radius;
+        border-radius: $radius;
+}
+
+@mixin transition($transition) {
+  -moz-transition:    all $transition ease;
+  -o-transition:      all $transition ease;
+  -webkit-transition: all $transition ease;
+  -ms-transition: 		all $transition ease;
+  transition:         all $transition ease;
+}
+
  .navbar:hover {
   transform: scale(1.01);
  }

@@ -10,7 +10,78 @@ $darken: #232931;
 $primary: #ffbd39;
 $secondary: #a0f669;
 
+@keyframes shootingStarAnimation-0 {
+    0% {
+        transform: translateX(0) translateY(0) rotate(0);
+    }
+    100% {
+        transform: translateX(100vw) translateY(50vh) rotate(180deg);
+    }
+}
 
+@keyframes shootingStarAnimation-1 {
+    0% {
+        transform: translateX(0) translateY(0) rotate(0);
+    }
+    100% {
+        transform: translateX(100vw) translateY(25vh) rotate(180deg);
+    }
+}
+
+@keyframes shootingStarAnimation-2 {
+    0% {
+        transform: translateX(0) translateY(0) rotate(0);
+    }
+    100% {
+        transform: translateX(100vw) translateY(75vh) rotate(180deg);
+    }
+}
+@keyframes scrollBackground {
+    from {
+        background-position: 0 0;
+    }
+    to {
+        background-position: 100% 0;
+    }
+}
+
+.stargaze-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* Ensure stars are behind other content */
+	animation: scrollBackground 60s linear infinite; 
+    background-color: #0b0b3b; /* Dark blue background */
+}
+@keyframes scrollBackground {
+    from {
+        background-position: 0 0;
+    }
+    to {
+        background-position: 100% 0;
+    }
+}
+
+
+@keyframes twinkle {
+    0% { opacity: 0; }
+    50% { opacity: 1; }
+    100% { opacity: 0; }
+}
+
+.star {
+    animation: twinkle infinite; /* Apply the twinkle animation */
+}
+
+.star {
+    position: absolute;
+    width: 1px; /* Adjust size of stars */
+    height: 1px;
+    background-color: #fff; /* White stars */
+    border-radius: 50%; /* Shape stars as circles */
+}
 
 @mixin border-radius($radius) {
   -webkit-border-radius: $radius;
