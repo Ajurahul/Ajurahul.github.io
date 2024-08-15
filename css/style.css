@@ -6,6 +6,23 @@
  */
 
 
+
+.github-background h1, .github-background h2, .github-background p, .github-background a {
+  color: white;
+}
+
+.github-background .list-group-item {
+  background-color: #373b3f; /* Darker blue for contrast */
+  border-color: #373b3f; /* Even darker blue for borders */
+}
+
+.github-background .list-group-item h3 a {
+  color: #ffcc00; /* Yellow for links to stand out */
+}
+
+.github-background .list-group-item h3 a:hover {
+  color: #ffc107; /* A lighter yellow on hover */
+}
  .stargaze {
   position: absolute;
   top: 0;
