@@ -1,0 +1,10 @@
+# Dependencies
+node_modules/
+
+# Build outputs
+dist/
+target/
+
+# Optional: environment or cache files
+.env
+*.log
