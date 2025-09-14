@@ -13,7 +13,7 @@ export default function Hero() {
             <div className="w-48 h-48 mx-auto rounded-full bg-gradient-to-r from-blue-500 to-purple-600 p-1 mb-6">
               <div className="w-full h-full rounded-full bg-gray-800 flex items-center justify-center overflow-hidden">
                 <img 
-                  src="https://images.pexels.com/photos/3777946/pexels-photo-3777946.jpeg?auto=compress&cs=tinysrgb&w=400" 
+                  src="../../images/aju.png"
                   alt="Aju K" 
                   className="w-full h-full object-cover"
                 />

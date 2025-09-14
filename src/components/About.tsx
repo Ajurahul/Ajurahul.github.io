@@ -20,7 +20,7 @@ export default function About() {
               <div className="absolute -inset-1 bg-gradient-to-r from-blue-600 to-purple-600 rounded-2xl blur opacity-75 group-hover:opacity-100 transition duration-1000 group-hover:duration-200"></div>
               <div className="relative bg-gray-900/80 backdrop-blur-sm rounded-2xl p-1">
                 <img
-                  src="https://images.pexels.com/photos/3777946/pexels-photo-3777946.jpeg?auto=compress&cs=tinysrgb&w=600"
+                  src="../../images/aju-sqr.png"
                   alt="Aju K"
                   className="w-full h-96 object-cover rounded-xl"
                 />
